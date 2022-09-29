@@ -12,18 +12,27 @@
       <main>
          <div class="box">
             <div class="box-img">
-               <!-- BACKGROUND-IMG COLOCADO VIA CSS -->
+               <picture>
+                  <source
+                     media="(min-width: 300px) and (max-width: 650px)"
+                     srcset="./images/image-product-mobile.jpg"
+                  />
+                  <img
+                     src="./images/image-product-desktop.jpg"
+                     alt="Imagem do perfume"
+                  />
+               </picture>
             </div>
             <div class="box-content">
-               <h2>Perfume</h2>
+               <span>Perfume</span>
                <h1>Gabrielle Essence Eau De Parfum</h1>
                <p>
                   Uma interpretação floral, solar e voluptuosa composta por
                   Olivier Polge, Perfumista-Criador da Casa CHANEL.
                </p>
                <div class="value">
-                  <div class="value-real">R$ 149.99</div>
-                  <div><del>R$ 169.99</del></div>
+                  <div class="value-real">R$149.99</div>
+                  <span><del>R$169.99</del></span>
                </div>
 
                <button>
